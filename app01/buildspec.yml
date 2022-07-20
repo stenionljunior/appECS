@@ -34,4 +34,4 @@ phases:
       - ls
 artifacts:
     files:
-      - imagedefinitions.json
+      - app01/imagedefinitions.json
