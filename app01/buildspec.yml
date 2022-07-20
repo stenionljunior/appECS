@@ -28,8 +28,8 @@ phases:
       - echo Pushing the Docker images...
       - docker push $REPOSITORY_URI:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"lab-pipeline-ecs","imageUri":"%s"}]' $REPOSITORY_URI:latest > ../imagedefinitions.json
-      - cat ../imagedefinitions.json 
+      - printf '[{"name":"lab-pipeline-ecs","imageUri":"%s"}]' $REPOSITORY_URI:latest > imagedefinitions.json
+      - cat imagedefinitions.json
 artifacts:
     files: 
       - imagedefinitions.json
