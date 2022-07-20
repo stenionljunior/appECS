@@ -30,6 +30,8 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"lab-pipeline-ecs","imageUri":"%s"}]' $REPOSITORY_URI:latest > imagedefinitions.json
       - cat imagedefinitions.json
+      - pwd
+      - ls
 artifacts:
-    files: 
+    files:
       - imagedefinitions.json
