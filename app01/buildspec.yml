@@ -20,6 +20,7 @@ phases:
       - cat Dockerfile
       - echo Build started on `date`
       - echo Building the Docker image...
+      - docker --version
       - docker build -t $REPOSITORY_URI:latest .
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:latest
   post_build:
